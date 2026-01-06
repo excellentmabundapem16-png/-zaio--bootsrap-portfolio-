@@ -19,26 +19,27 @@
   </head>
   <body class="bg-light">
     
-   <div class="banner-wrap vh-100 vw-100 text-white">
+   <div class="banner-wrap vh-100 vw-100  d-flex align-items-center justify-content-center text-white">
     <div class="overlay"></div>
-      <header class="px-5 p-3 text-white">
+      <header class="px-5 p-3 text-white fixed-top scrolling">
     <div>
       <h3 class="float-md-start mb-0 text-center">Portfolio</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#about-us">About Us</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact-us">Contact</a>
       </nav>
     </div>
-  </header>
+  </header> 
 
-  <main class="d-flex flex-column align-items-center justify-content-center h-75 text-center">
+  <main class="text-center">
     <h1 class="display-1">I am Excellent Mabunda</h1>
-    <p class="lead">Fullstack Developer, Music Producer. Beat maker</p>
+    <span id="typed"></span>
   </main>
 </div>
 
-<section>
+<section id="about-us">
   <div class="container p-5">
     <div class="card">
   
@@ -79,7 +80,7 @@
 </div>
   </div>
 </section>
-<section>
+<section id="projects">
   <div class="container p-5">
     <h1 class="text-center"><mark>Projects</mark></h1>
     <div class="row bg-white">
@@ -122,7 +123,7 @@
   </div>
 </section>
 
-<section>
+<section id="contact-us">
   <div class="container p-5">
    
               <div class="card p-3">
@@ -163,29 +164,104 @@
 </div>
   </div>
 </section>
+<footer class="bg-dark text-white text-center p-3">
+  <div class="container p-2">
+    <p >Developed by Excellent Mabunda using Bootstrap</p>
+  </div>
+</footer>
 
-<!-- 
-    
-LINKING LOCAL REPO TO GITHUB REPO
 
-Step: 1
-Create a Remote Repository on GitHub:
 
-    Log in to your GitHub account.
-    Click the '+' button in the top-right corner and select "New Repository."
-    Enter a Repository Name, optional Description, choose Public or Private visibility, and any other desired settings.
-    Click "Create repository." 
-    
-Step: 2
-Open Your Command Line Interface (CLI):
-Open terminal inside your Visual Studio Code
 
-Step: 3
-Initialize Your Local Repository (if not already done):
-If your project isn't already a Git repository, initialize it by running:
-git init
 
-Step: 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolling');
+    } else {
+      header.classList.remove('scrolling');
+    }
+  });
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+    <script>
+        var typed = new Typed('#typed', {
+        strings: ['Fullstack Developer, Music Producer. Beat maker'],
+        loop: true,
+        typeSpeed: 75,
+        shuffle: true
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Step: 4
 Add and Commit Your Code: 
 Add your project files to the repository and make an initial commit:
 git add . 
