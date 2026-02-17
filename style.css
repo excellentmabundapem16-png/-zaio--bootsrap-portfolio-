@@ -12,13 +12,12 @@
 }
 
 
-/*
- * Base structure
- */
+    /*
+    * Base structure
+    */
 
-body {
+
   
-}
 
 
 
@@ -50,11 +49,13 @@ overlay {
 .nav-masthead .nav-link {
   color: rgba(255, 255, 255, .5);
   border-bottom: .25rem solid transparent;
+  transition: all;
 }
 
 .nav-masthead .nav-link:hover{
   color: rgba(255, 255, 255, .75);
-  border-bottom-color: ;
+  border-bottom-color:white;
+  transition: all 0.5s;
 }
 .nav-masthead .nav-link:focus {
   border-bottom-color: rgba(255, 255, 255, .25);
