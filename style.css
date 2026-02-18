@@ -125,7 +125,7 @@ h1{
   transition: all 0.3s ease; 
 }
 
-main #pic:hover{
+#pic:hover{
   box-shadow: 0 0 20px rgba(255, 186, 8, 0.8);
   transition: all 0.3s ease;
 transform: scale(1.1);
