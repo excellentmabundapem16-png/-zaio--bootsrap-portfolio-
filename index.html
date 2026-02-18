@@ -17,40 +17,72 @@
    
     <link href="style.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
-    
-   <div class="banner-wrap vh-100 vw-100  d-flex align-items-center justify-content-center text-white">
-    <div class="overlay"></div>
-      <header class="px-5 p-3 text-white fixed-top scrolling">
-    <div>
-      <h3 class="float-md-start mb-0 text-center">Portfolio</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#about-us">About Us</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#contact-us">Contact</a>
-      </nav>
+  <body>
+    <header class="px-5 p-3 fixed-top scrolling w-100" style="z-index:2;">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <h3 class="mb-0 logo">Portfolio.</h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#about-us">About Us</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact-us">Contact</a>
+        </nav>
+        </div>
+    </header>
+    <div class="container d-flex flex-column vh-100 flex-md-row align-items-center justify-content-center text-center text-md-start flex-grow-1" style="z-index:2;min-height:60vh;" id="cover">
+      <div class="col-md-6 pt-5 pt-md-0 d-flex flex-column align-items-center align-items-md-start" id="name1">
+        <h1 style="margin-top: 2rem;">Excellent Mabunda</h1>
+        <p>Fullstack Developer</p>
+        <div class="mb-3" id="name2">
+          <a href="https://wa.me/254700000000" target="_blank"><i class="bi bi-whatsapp m-2"></i></a>
+          <a href="https://www.facebook.com/excellent.mabundapem16" target="_blank"><i class="bi bi-facebook m-2"></i></a>
+          <a href="https://github.com/excellentmabundapem16-pg" target="_blank"><i class="bi bi-github m-2"></i></a>
+          <a href="https://www.linkedin.com/in/excellent-mabundapem16" target="_blank"><i class="bi bi-linkedin m-2"></i></a>
+        </div>
+        <div class="btns mt-3">
+          <a href="tel:0665929031" target="_blank"><button class="btn btn-light mt-3 " id="one">Call Me</button></a>
+          <a href="mailto:excellentmabunda@gmail.com?subject=I Need a Developer" target="_blank"><button class="btn btn-light mt-3">Email Me</button></a>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0 d-flex justify-content-center align-items-center" style="margin-top:2rem !important;">
+        <img src="Excellp.png" alt="Excellent Mabunda" id="pic" class="img-fluid" style="max-width:350px; margin-top:0;">
+      </div>
     </div>
-  </header> 
+  </div>
 
-  <main class="text-center">
-    <h1 class="display-1">I am Excellent Mabunda</h1>
-    <span id="typed"></span>
-  </main>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <section id="about-us">
   <div class="container p-5">
-    <div class="card">
-  
-  <div class="card-body">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="images/Excellent.jpeg" class="img-fluid" alt="...">
+    <div class="card contains">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center mb-4 mb-md-0">
+            <img src="images/Excellent.jpeg" class="img-fluid" alt="Excellent Mabunda" style="max-width:250px; border-radius:30px;">
           </div>
-          <div class="col-md-6 mt-3">
+          <div class="col-md-7">
+            <h1 class="text-md-start"><mark>About Me</mark></h1>
+            <p class="lead">A security officer who is passionate about Tech, currently learning web development.</p>
             <p><strong>Name:</strong> Excellent Mabunda</p>
             <p><strong>Profile:</strong> Fullstack Developer</p>
             <p><strong>Phone Number:</strong> 0665929031</p>
@@ -59,7 +91,7 @@
               <span class="badge rounded-pill bg-dark">HTML</span>
               <span class="badge rounded-pill bg-dark">CSS</span>
               <span class="badge rounded-pill bg-dark">Git</span>
-              <span class="badge rounded-pill bg-dark">firebase</span>
+              <span class="badge rounded-pill bg-dark">Firebase</span>
               <span class="badge rounded-pill bg-dark">OOP</span>
               <span class="badge rounded-pill bg-dark">Redux</span>
               <span class="badge rounded-pill bg-dark">NodeJS</span>
@@ -70,22 +102,15 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 mt-3">
-        <h1 class="text-center text-md-start"><mark>About Me</mark></h1>
-        <p class="lead">A security officer who is passionate about Tech, currently learning web development.</p>
-      </div>
     </div>
-    
-  </div>
-</div>
   </div>
 </section>
 <section id="projects">
   <div class="container p-5">
-    <h1 class="text-center"><mark>Projects</mark></h1>
-    <div class="row bg-white">
-        <div class="col-md-4 mt-3"> 
-              <div class="card">
+    <h1 class="text-center "><mark>Projects</mark></h1>
+    <div class="row contains p-3">
+        <div class="col-md-4 mt-3 "> 
+              <div class="card1">
                 <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png" class="card-img-top" alt="...">
               <div class="card-body">
                   <h5 class="card-title">Netflix landing Page</h5>
@@ -96,7 +121,7 @@
           </div> 
         </div>
         <div class="col-md-4 mt-3"> 
-              <div class="card">
+              <div class="card1">
                 <img src="https://shots.codepen.io/username/pen/wvrmybX-800.jpg?version=1641130081" class="card-img-top" alt="...">
               <div class="card-body">
                   <h5 class="card-title">Tesla landing Page</h5>
@@ -107,7 +132,7 @@
           </div> 
         </div>
         <div class="col-md-4 mt-3"> 
-              <div class="card">
+              <div class="card1">
                 <img src=data:image/png;base64,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 class="card-img-top" alt="...">
               <div class="card-body">
                   <h5 class="card-title">Youtube clone</h5>
@@ -119,7 +144,7 @@
         </div>
     
         <div class="col-md-4 mt-3"> 
-              <div class="card">
+              <div class="card1">
                 <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fe5ch2wczzuqhive9zxnv.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                   <h5 class="card-title">X clone</h5>
@@ -136,9 +161,9 @@
 </section>
 
 <section id="contact-us">
-  <div class="container p-5">
+  <div class="container p-5 ">
    
-              <div class="card p-3">
+              <div class="card p-3 contains">
                 <div class="card-body px-3 text-center">
                   <h1 class="text-center"><mark>Let's Connect</mark></h1>
                   <p class="lead">Would like to connect with fellow developers, employers looking for developers, or anyone looking for web development done.</p>
@@ -152,7 +177,7 @@
     <form>
   <div class="mb-3">
     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email Address">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-3">
     <input type="text" class="form-control" id="name" placeholder="Enter Name">
@@ -202,132 +227,6 @@
 
 
 
-<script>
-  window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
-    if (window.scrollY > 50) {
-      header.classList.add('scrolling');
-    } else {
-      header.classList.remove('scrolling');
-    }
-  });
-</script>
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-
-    <script>
-        var typed = new Typed('#typed', {
-        strings: ['Fullstack Developer, Music Producer. Beat maker'],
-        loop: true,
-        typeSpeed: 75,
-        shuffle: true
-        });
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--Step: 4
-Add and Commit Your Code: 
-Add your project files to the repository and make an initial commit:
-git add . 
-git comit -m "Added initial code"
-
-Step: 5
-Copy Remote Repository URL:
-    Go to your GitHub repository's page.
-    Copy the repository's URL.
-    Ex. git remote add origin https://github.com/username/git-repo.git
-
-Step: 6
-Push Local Code to Remote Repository:
-Push your local code to the remote repository's master branch. 
-git push -u origin master    
-
--->
-
-<!-- 
-
-SETTING UP BASIC CI_CD    
-  
-Step: 1
-Create a Netlify Account:
-If you don't have a Netlify account, sign up for one at https://app.netlify.com/signup.
-
-Step: 2
-Log in to Netlify:
-Once you have an account, log in to the Netlify dashboard. 
-
-Step: 3
-Click "Add New Site" Button:
-In the Netlify dashboard, click the "New Site" button. Further, click on 'Import an existing project'.
-
-Step: 4
-Choose Your Git Provider:
-Netlify supports various Git providers (GitHub, GitLab, Bitbucket). Choose the one where your project's repository is hosted.
-
-Step: 5
-Select Your Repository:
-Once authorized, select the repository containing your existing project.
-
-Step: 6
-Click on 'Deploy side'
-
-Step; 7 
-Run in terminal:
-git comit -am "write here what changes you made such as (modified title and nav-title)"
-
-Step: 8
-Run in terminal:
-git push
-
--->
 
 
   </body>
