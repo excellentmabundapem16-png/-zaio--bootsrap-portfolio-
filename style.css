@@ -209,12 +209,20 @@ mark{background-color: #ffba08;
   
 }
 
-.btns{border: 0.1px solid #ffba08;
+.btns{border: none;
   border-radius: 25px;
   padding: 0.5rem;
   display: inline-block;
   width: 400px;
   align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 2px #f3f1ec;
+}
+
+.btns:hover{
+  box-shadow: 0 0 20px rgba(244, 242, 238, 0.8);
+  transition: all 0.3s ease;
+  transform: scale(1.05);
 }
 
 .form-control{
